@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="./css/style.css" type="text/css">        
+		<title>Invoice</title>
+        <script src="./js/invoice.js"></script>
+	</head>
+	<body>
+
+		<div class="header">
+			<div class="container">			  
+				<img src="./img/logo64x64.png" alt="notFoundImg">			  
+			  <nav>
+				<ul>
+					<li><a href="./welcome.html">Welcome</a></li>
+					<li><a href="./fish_dishes.html">Fish Dishes</a></li>
+                    <li><a href="./dishes.html">Other Dishes</a></li>
+                    <li><a href="./shopping.html">Shopping</a></li>
+                    <li><a href="./invoice.html">Invoice</a></li>
+                    <li><a href="./index.html">Logout</a></li>
+				</ul>
+			  </nav>
+			</div>
+		</div>
+
+
+        <div id="boxes">
+			<div class="container">
+				<div class="box">					
+					<h3>Product</h3>
+                    <hr>					
+				</div>
+				<div class="box">
+					<h3>Price</h3>
+                    <hr>
+				</div>
+				<div class="box">
+					<h3>Quantity</h3>
+                    <hr>
+				</div>  
+                <div class="box">
+					<h3>Totals</h3>
+                    <hr>
+				</div> 
+
+			</div>
+		</div>
+
+
+        <div id="boxes">
+			<div class="container">
+                <div class="oderList">
+                    <div class="box">					
+                        <p id="productName1"></p>
+                        					
+                    </div>
+                    <div class="box">
+                        <p><span id="productPrice1"></span>$</p>
+                        
+                    </div>
+                    <div class="box">
+                        <p id="productQuantity1"></p>
+                        
+                    </div>
+                    <div class="box">
+                        <p>Subtotal: <span id="subtotal"></span>$</p>
+                        <p>TPS: <span id="taxTPS"></span>$</p>
+                        <p>TVQ: <span id="taxTVQ"></span>$</p>
+                        <h4>TOTAL: <span id="totalAndTax"></span>$</h4>        
+        
+                    </div>        
+                </div>
+			</div>
+		</div>
+
+        <hr>
+
+
+        <div class="container">
+            <h1 id="invoiceTitle">Finalise Payment</h1>                     
+        </div>
+        
+
+		<div id="cardInfo">
+			<div class="container">
+                <form id="invoiceForm">
+                    
+                    <div class="containerIn">
+                        <h2>Card Info</h2>
+                        <br>
+
+                        <div>
+                            <label>*Card Number:</label>  
+                            <br>                      
+                            <input type="text" id="cardNum" name="cardNum" >
+                            <p class="warning">Must be composed of 15 or 16 numbers<br>ex:123123123123123</p>
+                        </div>
+                        
+                        <div>
+                            <label>*CVC:</label>                        
+                            <br>                      
+                            <input type="text" id="cvc" name="cvc">
+                            <p class="warning">Must be composed of 3 numbers<br>ex:123</p>
+                        </div>
+                        
+                        <div>
+                            <label>*Name on the Card:</label>                        
+                            <br>                      
+                            <input type="text" id="cardName" name="cardName">
+                            <p class="warning">First Name and Last Name must be separated by a space <br>and First Name and Last must be composed of letters  <br>ex:John Doe</p>
+                        </div>
+                        <div>
+                            <label>*Expiration:</label>                        
+                            <br>                      
+                            <input type="text" id="cardExpiration" name="cardExpiration">
+                            <p class="warning">Must be composed of 2 digits then a slash and then 2 digits<br>ex:01/01</p>
+                        </div>
+                        <div>
+                            <input type="button" value="Clear" id="btnClearForm">
+                        </div>
+                      
+                        <h2>Total Purchase</h2>
+                        <br>
+                        
+                        <div>
+                            <p><span id="formPrice"></span>$</p>
+                            
+                        </div>
+                        <div>
+                            <input type="checkbox" id="terms" name="terms">
+                            <label for="terms">*Agree terms and Conditions</label>                        
+                            
+                        </div>
+                        <div>
+                            <input type="submit" value="Submit" id="invoiceSubmit">                            
+                        </div>
+
+                    </div>
+
+                    <div class="containerIn">
+                        <h2>Shipping Address</h2>
+                        <br>
+
+                        <div>
+                            <label>*Name:</label>  
+                            <br>                      
+                            <input type="text" id="addName" name="addName">
+                            <p class="warning">First Name and Last Name must be separated by a space <br>and First Name and Last must be composed of letters  <br>ex:John Doe</p>                        
+                        </div>
+                        <div>
+                            <label>*Address:</label>                        
+                            <br>                      
+                            <input type="text" id="addAddress1" name="addAddress1">
+                            <p class="warning"> Address Number and Street Name must be separated by a space<br> and Address Number must be composed of numbers<br> and Street Name must be composed of numbers or letters <br>ex:1234 StreetName</p>
+                        </div>
+                        <div>
+                            <label>Address 2:</label>                        
+                            <br>                      
+                            <input type="text" id="addAddress2" name="addAddress2">
+                            <p class="warning"> Address Number and Street Name must be separated by a space<br> and Address Number must be composed of numbers<br> and Street Name must be composed of numbers or letters <br>ex:1234 StreetName</p>
+                        </div>
+                        <div>
+                            <label>*City:</label>                        
+                            <br>                      
+                            <input type="text" id="addCity" name="addCity">
+                            <p class="warning">Must be composed of letters<br>ex:CityName</p>
+                        </div>
+                        <div>
+                            <label>*Postal Code:</label>                        
+                            <br>                      
+                            <input type="text" id="addPostCode" name="addPostCode">
+                            <p class="warning">Post Code must match this patern of letters and numbers<br>ex:A1A1A1</p>
+                        </div>
+                        <div>
+                            <label>*Province:</label>                        
+                            <br>                      
+                            <input type="text" id="addProvince" name="addProvince">
+                            <p class="warning">Must be composed of letters<br>ex:ProvinceName</p>
+                        </div>
+                        <div>
+                            <label>Country:</label>                        
+                            <br>                      
+                            <input type="text" id="addCountry" name="addCountry">
+                            <p class="warning">Must be composed of letters<br>ex:CountryName</p>
+                        </div>
+
+                    </div>
+                    
+                </form>								
+			</div>
+		</div>
+		
+        <div class="footer">
+			<div class="container">
+				<a href="https://twitter.com/?lang=en" target="_blank"><img src="./img/twitter.png" alt="notFoundImgTiwitter" class="footerImg" width="32" height="32"></a>
+				<a href="https://www.instagram.com/" target="_blank"><img src="./img/instagram.png" alt="notFoundImgInstagram" class="footerImg" width="32" height="32"></a>
+				<a href="https://www.facebook.com/" target="_blank"><img src="./img/facebook.png" alt="notFoundImgFacebook" class="footerImg" width="32" height="32"></a>				
+			</div>			
+		</div>
+
+
+
+	
+	</body>
+</html>

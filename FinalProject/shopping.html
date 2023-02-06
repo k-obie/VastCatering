@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="./css/style.css" type="text/css">
+		<title>Other Dishes</title>
+        <script src="./js/shopping.js"></script>
+	</head>
+	<body>
+
+		<div class="header">
+			<div class="container">			  
+				<img src="./img/logo64x64.png" alt="notFoundImg">			  
+			  <nav>
+				<ul>
+					<li><a href="./welcome.html">Welcome</a></li>
+					<li><a href="./fish_dishes.html">Fish Dishes</a></li>
+                    <li><a href="./dishes.html">Other Dishes</a></li>
+                    <li><a href="./shopping.html">Shopping</a></li>
+                    <li><a href="./invoice.html">Invoice</a></li>
+                    <li><a href="./index.html">Logout</a></li>
+				</ul>
+			  </nav>
+			</div>
+		</div>
+
+        <div class="menu">
+            <div class="container">
+                <form id="myForm" name="form1" action="./invoice.html">
+                    <div class="wrapper" id="wrap">	
+
+                        <div id="addCart">
+                            <input type="button" value="Add to cart" id="btnCart" >
+                            
+                            <h3>Total: <sapn id="amount"></sapn> $</h3>
+                            
+                        </div>	
+
+                    
+                        <div class="foodIteam">
+                            <img src="./img/food/other/Beanball_croquettes1.jpg" width="350">
+                            <br>
+                            <label>Beanball Croquettes:</label>
+                            <p><span id="priceItem1">6.50</span>$</p>
+                            <br>
+                            <input type="number" value="0" min="0" max="10" name="qtyItem1" id="qtyItem1">
+                        </div>
+    
+                        <div class="foodIteam">
+                            <img src="./img/food/other/Burly_bean_bowl1.jpg" width="350">
+                            <br>
+                            <label>Burly Bean Bow:</label>
+                            <p><span id="priceItem2">5.50</span>$</p>
+                            <br>
+                            <input type="number" value="0" min="0" max="10"  id="qtyItem2">
+                        </div>
+    
+                        <div class="foodIteam">
+                            <img src="./img/food/other/Crispy_zu_skewers1.jpg" width="350">
+                            <br>
+                            <label>Crispy Zu Skewers:</label>
+                            <p><span id="priceItem3">7.50</span>$</p>
+                            <br>
+                            <input type="number" value="0" min="0" max="10"  id="qtyItem3">
+                        </div>
+    
+                        <div class="foodIteam">
+                            <img src="./img/food/other/Crown_city_dive-style_dumplings1.jpg" width="350">
+                            <br>
+                            <label>Crown City Dive-style Dumplings:</label>
+                            <p><span id="priceItem4">6.20</span>$</p>
+                            <br>
+                            <input type="number" value="0" min="0" max="10"  id="qtyItem4">
+                        </div>
+    
+                        <div class="foodIteam">
+                            <img src="./img/food/other/Dish_and_chips1.jpg" width="350">
+                            <br>
+                            <label>Dish and Chips:</label>
+                            <p><span id="priceItem5">5.00</span>$</p>
+                            <br>
+                            <input type="number" value="0" min="0" max="10"  id="qtyItem5">
+                        </div>
+    
+                        <div class="foodIteam">
+                            <img src="./img/food/other/Dry-aged_tender_roast_stew1.jpg" width="350">
+                            <br>
+                            <label>Dry-aged Tender Roast Stew:</label>
+                            <p><span id="priceItem6">6.20</span>$</p>
+                            <br>
+                            <input type="number" value="0" min="0" max="10"  id="qtyItem6">
+                        </div>
+    
+                        <div class="foodIteam">
+                            <img src="./img/food/other/Fried_frontier_skewer1.jpg" width="350">
+                            <br>
+                            <label>Fried Frontier Skewer:</label>
+                            <p><span id="priceItem7">6.50</span>$</p>
+                            <br>
+                            <input type="number" value="0" min="0" max="10"  id="qtyItem7">
+                        </div>
+    
+                        <div class="foodIteam">
+                            <img src="./img/food/other/Hearty_cutlet_on_rice1.jpg" width="350">
+                            <br>
+                            <label>Hearty Cutlet on Rice:</label>
+                            <p><span id="priceItem8">6.20</span>$</p>
+                            <br>
+                            <input type="number" value="0" min="0" max="10"  id="qtyItem8">
+                        </div>
+    
+                        <div class="foodIteam">
+                            <img src="./img/food/other/Kings_stew1.jpg" width="350">
+                            <br>
+                            <label>Kings Stew:</label>
+                            <p><span id="priceItem9">5.00</span>$</p>
+                            <br>
+                            <input type="number" value="0" min="0" max="10"  id="qtyItem9">
+                        </div>
+    
+                        <div class="foodIteam">
+                            <img src="./img/food/other/Meat-and-beet_bouillon1.jpg" width="350">
+                            <br>
+                            <label>Meat and Beet Bouillon:</label>
+                            <p><span id="priceItem10">5.20</span>$</p>
+                            <br>
+                            <input type="number" value="0" min="0" max="10"  id="qtyItem10">
+                        </div>
+    
+                        <div class="foodIteam">
+                            <img src="./img/food/other/Packed_mushroom_stew1.jpg" width="350">
+                            <br>
+                            <label>Packed Mushroom Stew:</label>
+                            <p><span id="priceItem11">5.00</span>$</p>
+                            <br>
+                            <input type="number" value="0" min="0" max="10"  id="qtyItem11">
+                        </div>
+    
+                        <div class="foodIteam">
+                            <img src="./img/food/other/Spicy_long-bone_rib_steak1.jpg" width="350">
+                            <br>
+                            <label>Spicy Long-bone Rib Steak:</label>
+                            <p><span id="priceItem12">7.50</span>$</p>
+                            <br>
+                            <input type="number" value="0" min="0" max="10"  id="qtyItem12">
+                        </div>
+                        
+
+                        <div class="foodIteam">
+                            <img src="./img/food/fish/Anointed_allural_sea_bass1.jpg" width="350">
+                            <br>
+                            <label>Anointed Allural Sea Bass:</label>
+                            <p><span id="priceItem13">5.50</span>$</p>
+                            <br>
+                            <input type="number" value="0" min="0" max="10"  id="qtyItem13">
+                        </div>
+    
+                        <div class="foodIteam">
+                            <img src="./img/food/fish/Crispy_fish_fritterwich1.jpg" width="350">
+                            <br>
+                            <label>Crispy Fish Fritterwich:</label>
+                            <p><span id="priceItem14">6.50</span>$</p>
+                            <br>
+                            <input type="number" value="0" min="0" max="10"  id="qtyItem14">
+                        </div>
+    
+                        <div class="foodIteam">
+                            <img src="./img/food/fish/Darkshells_marinieres1.jpg" width="350">
+                            <br>
+                            <label>Darkshells Marinieres:</label>
+                            <p><span id="priceItem15">7.00</span>$</p>
+                            <br>
+                            <input type="number" value="0" min="0" max="10"  id="qtyItem15">
+                        </div>
+    
+                        <div class="foodIteam">
+                            <img src="./img/food/fish/Fire-sauce_fillet1.jpg" width="350">
+                            <br>
+                            <label>Fire-sauce Fillet:</label>
+                            <p><span id="priceItem16">5.00</span>$</p>
+                            <br>
+                            <input type="number" value="0" min="0" max="10"  id="qtyItem16">
+                        </div>
+    
+                        <div class="foodIteam">
+                            <img src="./img/food/fish/Fishermans_favorite_paella1.jpg" width="350">
+                            <br>
+                            <label>Fishermans Favorite Paella:</label>
+                            <p><span id="priceItem17">6.50</span>$</p>
+                            <br>
+                            <input type="number" value="0" min="0" max="10"  id="qtyItem17">
+                        </div>
+    
+                        <div class="foodIteam">
+                            <img src="./img/food/fish/Grilled_mighty_barramundi1.jpg" width="350">
+                            <br>
+                            <label>Grilled Mighty Barramundi:</label>
+                            <p><span id="priceItem18">7.20</span>$</p>
+                            <br>
+                            <input type="number" value="0" min="0" max="10"  id="qtyItem18">
+                        </div>
+    
+                        <div class="foodIteam">
+                            <img src="./img/food/fish/Grilled_wild_barramundi1.jpg" width="350">
+                            <br>
+                            <label>Grilled Wild Barramundi:</label>
+                            <p><span id="priceItem19">5.00</span>$</p>
+                            <br>
+                            <input type="number" value="0" min="0" max="10"  id="qtyItem19">
+                        </div>
+    
+                        <div class="foodIteam">
+                            <img src="./img/food/fish/Grilled_wild_trevally1.jpg" width="350">
+                            <br>
+                            <label>Grilled Wild Trevally:</label>
+                            <p><span id="priceItem20">6.20</span>$</p>
+                            <br>
+                            <input type="number" value="0" min="0" max="10"  id="qtyItem20">
+                        </div>
+    
+                        <div class="foodIteam">
+                            <img src="./img/food/fish/Oil-drizzled_steamed_fish1.jpg" width="350">
+                            <br>
+                            <label>Oil-drizzled Steamed Fish:</label>
+                            <p><span id="priceItem21">5.50</span>$</p>
+                            <br>
+                            <input type="number" value="0" min="0" max="10"  id="qtyItem21">
+                        </div>
+    
+                        <div class="foodIteam">
+                            <img src="./img/food/fish/Royal_road_paella1.jpg" width="350">
+                            <br>
+                            <label>Royal Road Paella:</label>
+                            <p><span id="priceItem22">6.50</span>$</p>
+                            <br>
+                            <input type="number" value="0" min="0" max="10"  id="qtyItem22">
+                        </div>
+    
+                        <div class="foodIteam">
+                            <img src="./img/food/fish/Sea_bass_saute1.jpg" width="350">
+                            <br>
+                            <label>Sea Bass Saute:</label>
+                            <p><span id="priceItem23">5.20</span>$</p>
+                            <br>
+                            <input type="number" value="0" min="0" max="10"  id="qtyItem23">
+                        </div>
+    
+                        <div class="foodIteam">
+                            <img src="./img/food/fish/Sweet_saltwater_crustacean_curry1.jpg" width="350">
+                            <br>
+                            <label>Sweet Saltwater Crustacean Curry:</label>
+                            <p><span id="priceItem24">7.50</span>$</p>
+                            <br>
+                            <input type="number" value="0" min="0" max="10"  id="qtyItem24">
+                        </div>
+
+                        <div id="invoice">
+                            <img src="./img/logo.png" height="198">
+                            <br>
+                            <p>After selecting the dishes, click on the "Go To Invoice" button.</p>
+                            <br>
+                            <input type="submit" value="Go To Invoice" name="mysub1" id="btnGoToInvoice">
+                        </div>
+    
+                                            
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+		<div class="footer">
+			<div class="container">
+				<a href="https://twitter.com/?lang=en" target="_blank"><img src="./img/twitter.png" alt="notFoundImgTiwitter" class="footerImg" width="32" height="32"></a>
+				<a href="https://www.instagram.com/" target="_blank"><img src="./img/instagram.png" alt="notFoundImgInstagram" class="footerImg" width="32" height="32"></a>
+				<a href="https://www.facebook.com/" target="_blank"><img src="./img/facebook.png" alt="notFoundImgFacebook" class="footerImg" width="32" height="32"></a>				
+			</div>			
+		</div>
+        
+		
+	</body>
+</html>
